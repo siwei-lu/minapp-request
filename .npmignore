@@ -5,6 +5,5 @@ test/
 .flowconfig
 .gitignore
 index.js
-package-lock.json
 rollup.config.js
 yarn.lock
