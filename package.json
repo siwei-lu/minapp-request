@@ -1,0 +1,39 @@
+{
+  "name": "minapp-request",
+  "version": "0.0.1",
+  "description": "封装 `wx.request`，使用中间件处理请求，更好用的小程序网络请求库。",
+  "main": "dist/index.js",
+  "miniprogram": "dist",
+  "scripts": {
+    "start": "npm run build && node index.js",
+    "build": "rollup -c",
+    "test": "mocha --recursive -r @babel/register test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IdanLoo/MinappRequest"
+  },
+  "author": "Idan Loo <im@siwei.lu>",
+  "license": "MIT",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/IdanLoo/MinappRequest/issues"
+  },
+  "homepage": "https://github.com/IdanLoo/MinappRequest#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.2.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "rollup": "^1.1.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-terser": "^4.0.2"
+  }
+}
